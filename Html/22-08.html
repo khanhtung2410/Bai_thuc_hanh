@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html>]
+<style>
+p{ font-size:50px;}
+</style>
 <body>
+<p>dao duy khanh tung 2121051147<p>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
 
-<h1>dao duy khanh tung 2121051147</h1>
-
-<p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" style="color:blue"id="fname" name="fname" value="John" disabled><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <input type="submit" value="Submit">
-</form>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
 
 </body>
 </html>
