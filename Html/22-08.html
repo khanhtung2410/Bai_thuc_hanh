@@ -2,20 +2,22 @@
 <html>
 <body>
 
+<h1>dao duy khanh tung 2121051147</h1>
 <div id="result"></div>
 
 <script>
-// Check browser support
-if (typeof(Storage) !== "undefined") {
-  // Store
-  localStorage.setItem("lastname", "dao duy khanh tung 2121051147");
-  // Retrieve
-  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+if(typeof(EventSource) !== "undefined") {
+  var source = new EventSource("demo_sse.php");
+  source.onmessage = function(event) {
+    document.getElementById("result").innerHTML += event.data + "<br>";
+  };
 } else {
-  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
 }
 </script>
 
 </body>
 </html>
+
+
 
