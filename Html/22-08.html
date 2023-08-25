@@ -1,23 +1,88 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <style>
+        h1 {
+            color: blue
+        }
+        h4 {
+          text-align: center;
+          margin-bottom: 0cm;
+        }
+        table,td,th {
+          border: 1px solid gray;
+        }
+        th{
+          text-align: center;
+        }
+        h2{
+          font-size: 45;
+        }
+        p1{
+          margin-top: 02cm;
+        }
+    </style>
+    <body>
+      <h1><u>
+        Khoa CNTT HUMG 
+      </u>
+      </h1>  
+      <h4>
+        Departments 
+      </h4>
+      <table style="width: 100%; background-color: rgb(148, 232, 171);">
+          <tr>
+            <th><b>STT</b></th>
+            <th><b>Department</b></th>
+            <th><b>Address</b></th>
+            <th><b>Phone</b></th>
+            <th><b>Email</b></th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td style="color: blue;"><u>Tin học trắc địa</u></td>
+            <td>709 nhà 12 tầng</td>
+            <td>090999999</td>
+            <td>tinhoctracdia@humg.edu.vn</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td style="color: blue;"><u>CNPM</u></td>
+            <td>702 nhà 12 tầng</td>
+            <td>090955555</td>
+            <td>cnpm@humg.edu.vn</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td style="color: blue;"><u>Tin học kinh tế</u></td>
+            <td>708 nhà 12 tầng</td>
+            <td>0909666666</td>
+            <td>thkt@humg.edu.vn</td>
+          </tr>    
+      </table>
+      <h3><b> Chuyên ngành trong khoa</b></h3>
+      <ul>
+        <li>CNTT Địa học</li>
+        <li>CNPM</li>
+        <li>THKT</li>
+        <li>KHMT</li>
+        <li>HTTT</li>
+      </ul>
+      <h2><b>Trang web này của Pub</b></h2>
+      <img src= "./pub.jpg" alt="cute pug" width="400" height="400">
 
-<h1>dao duy khanh tung 2121051147</h1>
-<div id="result"></div>
+      <form>
+        <label for="username">User Name: </label>
+        <input type="text" id="username"
+          value="input username" style="color: gray;"><br>
+        <label for="password">Password: </label>
+        <input type="text" id="password" 
+          value="input password" style="color: gray;"><br>
+        <label for="remember">Remember me: </label>
+        <input type="checkbox" id="remember" ;><br>
+        <input type="submit" value="Log in">
+      </form>
 
-<script>
-if(typeof(EventSource) !== "undefined") {
-  var source = new EventSource("demo_sse.php");
-  source.onmessage = function(event) {
-    document.getElementById("result").innerHTML += event.data + "<br>";
-  };
-} else {
-  document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
-}
-</script>
+      <p>--------------------------</p>
 
-</body>
+    </body>
 </html>
-
-
-
