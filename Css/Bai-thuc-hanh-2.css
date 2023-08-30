@@ -1,0 +1,24 @@
+/***** Section *****/
+input[type=text] {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 2px solid #6e4040;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+h1{
+    color: aquamarine;
+}
+input[type=select]{
+    display: inline-block;
+}
+div{
+    border-radius: 2px;
+    padding: 5px;
+    background-color: rgb(206, 206, 206);
+}
+
+/***** End Section *****/

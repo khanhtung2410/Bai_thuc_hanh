@@ -1,0 +1,26 @@
+/***** Section *****/
+
+        h1 {
+            color: maroon;
+            text-align: center;
+        }
+        
+        table,td,th {
+            width: 100%;
+            background-color: rgb(148, 232, 171);
+            border: 2px solid gray;
+        }
+        th{
+          text-align: center;
+        }
+        h2{
+          font-size: 45;
+        }
+        p1{
+          margin-top: 02cm;
+        }
+        ul li{
+            color: blue;
+        } 
+        
+/***** End Section *****/
