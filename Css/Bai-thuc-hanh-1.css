@@ -4,31 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-
 <div class="w3-container">
-  <h2>dao duy khanh tung</h2>
-  <p>The w3-opacity classes add a transparency effect to an element.</p>
 
-  <p>Normal:</p>
-  <img src="img_snow_wide.jpg" style="width:300px">
-  <p>w3-opacity-min:</p>
-  <img src="img_snow_wide.jpg" class="w3-opacity-min" style="width:300px">
-  <p>w3-opacity:</p>
-  <img src="img_snow_wide.jpg" class="w3-opacity" style="width:300px">
-  <p>w3-opacity-max:</p>
-  <img src="img_snow_wide.jpg" class="w3-opacity-max" style="width:300px">
+<h2>dao duy khanh tung</h2>
 
-  <div class="w3-panel w3-red w3-opacity">
-    <p>Red with opacity</p>
-  </div>
-  <div class="w3-panel w3-blue w3-opacity">
-    <p>Blue with opacity</p>
-  </div>
-  <div class="w3-panel w3-green w3-opacity">
-    <p>Green with opacity</p>
-  </div>
+<p>An vertical bar is a common web design element:</p>
+
+<div class="w3-bar-block w3-border w3-light-grey" style="width:100px">
+  <div class="w3-bar-item">London</div>
+  <div class="w3-bar-item">Paris</div>
+  <div class="w3-bar-item">Tokyo</div>
 </div>
 
+</div>
 </body>
 </html>
-
