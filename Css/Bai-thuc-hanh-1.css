@@ -6,19 +6,17 @@
 <body>
 
 <div class="w3-container">
-  <h1>Using dao duy khanh tung 2121051147</h1>
+  <h2>Buttons dao duy khanh tung</h2>
+  <input type="button" class="w3-button w3-black" value="Input Button">
+  <button class="w3-button w3-black">Button Button</button>
+  <a href="#" class="w3-button w3-black">Link Button</a>
+</div>
 
-  <div class="w3-display-container w3-green" style="height:300px;">
-    <div class="w3-display-topleft">Top Left</div>
-    <div class="w3-display-topright">Top Right</div>
-    <div class="w3-display-bottomleft">Bottom Left</div>
-    <div class="w3-display-bottomright">Bottom Right</div>
-    <div class="w3-display-left">Left</div>
-    <div class="w3-display-right">Right</div>
-    <div class="w3-display-middle">Middle</div>
-    <div class="w3-display-topmiddle w3-hide-small">Top Middle</div>
-    <div class="w3-display-bottommiddle w3-hide-small">Bottom Middle</div>
-  </div>
+<div class="w3-container">
+  <h2>Buttons (w3-btn)</h2>
+  <input type="button" class="w3-btn w3-black" value="Input Button">
+  <button class="w3-btn w3-black">Button Button</button>
+  <a href="#" class="w3-btn w3-black">Link Button</a>
 </div>
 
 </body>
