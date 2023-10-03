@@ -5,21 +5,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
-<div class="w3-container w3-blue">
-  <h2>Input Form</h2>
+<div class="w3-container">
+  <h2>W3.CSS Tags</h2>
+  <p>The w3-tag class creates a rectangular tag (label or sign).</p>
+  <p>Dao duy khanh tung.</p>
+  <p>Status: <span class="w3-tag">Done</span></p>
 </div>
-
-<form class="w3-container">
-  <p>
-  <label>dao duy khanh tung</label>
-  <input class="w3-input" type="text"></p>
-  <p>
-  <label>Last Name</label>
-  <input class="w3-input" type="text"></p>
-  <p>
-  <label>Email</label>
-  <input class="w3-input" type="text"></p>
-</form>
 
 </body>
 </html> 
