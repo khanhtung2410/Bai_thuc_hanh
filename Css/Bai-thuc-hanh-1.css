@@ -4,18 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
+
 <div class="w3-container">
+  <h2>dao duy khanh tung</h2>
+  <p>Hover over the sentence below!</p>
 
-<h2>dao duy khanh tung</h2>
-
-<div class="w3-bar">
-  <a href="#" class="w3-button">1</a>
-  <a href="#" class="w3-button">2</a>
-  <a href="#" class="w3-button">3</a>
-  <a href="#" class="w3-button">4</a>
-  <a href="#" class="w3-button">5</a>
+  <p class="w3-tooltip">London <span class="w3-text">(<em>9 million inhabitants</em>)</span> is the capital of England.</p>
 </div>
 
-</div>
 </body>
 </html>
