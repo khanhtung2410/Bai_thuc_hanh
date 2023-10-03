@@ -6,32 +6,13 @@
 <body>
 
 <div class="w3-container">
+  <h1>dao duy khanh tung</h1>
 
-<div class="w3-panel w3-padding-16 w3-orange">
-  <h4>w3-padding-16</h4>
-  <p>dao duy khanh tung 2121051147</p>
-</div>
-
-<div class="w3-panel w3-padding-24 w3-orange">
-  <h4>w3-padding-24</h4>
-  <p>I have 24px top and bottom padding</p>
-</div>
-
-<div class="w3-panel w3-padding-32 w3-orange">
-  <h4>w3-padding-32</h4>
-  <p>I have 32px top and bottom padding</p>
-</div>
-
-<div class="w3-panel w3-padding-48 w3-orange">
-  <h4>w3-padding-48</h4>
-  <p>I have 48px top and bottom padding</p>
-</div>
-
-<div class="w3-panel w3-padding-64 w3-orange">
-  <h4>w3-padding-64</h4>
-  <p>I have 64px top and bottom padding</p>
-</div>
-
+  <div class="w3-border">
+    <div class="w3-container w3-margin w3-green">
+      <p>The w3-margin class adds 16px margin to all sides of an element.</p>
+    </div>
+  </div>
 </div>
 
 </body>
