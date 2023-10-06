@@ -5,23 +5,44 @@
 </head>
 
 <body>
-  <form id="form">
-    <label for="numbera">Nhập số a:</label>
-    <input type="text" id="so1" required><br>
-    <label for="numberb">Nhập số b:</label>
-    <input type="text" id="so2">
-    <p>Tổng a và b là: <span id="tong"></span></p>
-    <input type="submit" value="Tính tổng">
+  <form id="form" style="line-height: 2">
+    <label for="hoten">Họ tên (*)</label>
+    <input type="text" name="hoten" required><br>
+    <label for="username">Tên đăng nhập (*)</label>
+    <input type="text" name="username" id="username" required><br>
+    <label for="password">Password (*)</label>
+    <input type="password" name="password" id="password" required><br>
+    <label for="password-confirm">Nhập lại password (*)</label>
+    <input type="password" name="password-confirm" id="passconfirm" required><br>
+    <label for="nation">Quốc tịch (*)</label>
+    <select name="nation" id="nations">
+      <option value="vietnam">Việt Nam</option>
+      <option value="u.s.a">America</option>
+    </select><br>
+    <label for="email">Email (*)</label>
+    <input type="email" name="email" required><br>
+    <label for="phone">Số điện thoại (*)</label>
+    <input type="number" name="phone" ><br>
+    <label for="secret-question">Câu hỏi bí mật (*)</label>
+    <select name="secret-question" id="2nd-layer">
+      <option value="first-class">Cấp 1 bạn học trường gì?</option>
+      <option value="pet">Thú nuôi đầu tiên của bạn tên gì</option>
+    </select><br>
+    <label for="answer">Trả lời (*)</label>
+    <input class="infomations" type="text" name="answer" required><br>
+    <input type="submit" value="Đăng ký">
   </form>
 </body>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#form').onsubmit = function () {
-      const n1 = parseInt(document.querySelector('#so1').value);
-      const n2 = parseInt(document.querySelector('#so2').value);
-      var tong = n1 + n2;
-      document.getElementById("tong").innerHTML = tong
-      alert(tong);
+      const ten = document.querySelector('#username').value;
+      if (ten.length < 8)
+        alert('Tên đăng nhập phải có ít nhất 8 ký tự');
+      const pass = document.querySelector('#password').value;
+      const confirm = document.querySelector('#passconfirm').value;
+      if (pass != confirm)
+        alert('Mật khẩu nhập lại không trùng');
     };
   });
 
