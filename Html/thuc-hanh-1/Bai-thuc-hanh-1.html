@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <link rel="stylesheet" href="/Bai-thuc-hanh-1.css" >
-    </head>
-    <body>
-      <h1>1st javasrcipt</h1>
-<button onclick="hello()">click here</button>
-    </body>
-    <script>
-      function hello(){
-        document.querySelector('h1').innerHTML = '2nd javascript';
-      }
-    </script>
+
+<head>
+</head>
+
+<body>
+  <form id="form">
+    <label for="numbera">Nhập số a:</label>
+    <input type="text" id="so1" required><br>
+    <label for="numberb">Nhập số b:</label>
+    <input type="text" id="so2">
+    <p>Tổng a và b là: <span id="tong"></span></p>
+    <input type="submit" value="Tính tổng">
+  </form>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('#form').onsubmit = function () {
+      const n1 = parseInt(document.querySelector('#so1').value);
+      const n2 = parseInt(document.querySelector('#so2').value);
+      var tong = n1 + n2;
+      document.getElementById("tong").innerHTML = tong
+      alert(tong);
+    };
+  });
+
+
+</script>
+
 </html>
