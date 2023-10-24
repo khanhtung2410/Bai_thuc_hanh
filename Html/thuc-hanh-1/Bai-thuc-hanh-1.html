@@ -5,48 +5,19 @@
 </head>
 
 <body>
-  <form id="form" style="line-height: 2">
-    <label for="hoten">Họ tên (*)</label>
-    <input type="text" name="hoten" required><br>
-    <label for="username">Tên đăng nhập (*)</label>
-    <input type="text" name="username" id="username" required><br>
-    <label for="password">Password (*)</label>
-    <input type="password" name="password" id="password" required><br>
-    <label for="password-confirm">Nhập lại password (*)</label>
-    <input type="password" name="password-confirm" id="passconfirm" required><br>
-    <label for="nation">Quốc tịch (*)</label>
-    <select name="nation" id="nations">
-      <option value="vietnam">Việt Nam</option>
-      <option value="u.s.a">America</option>
-    </select><br>
-    <label for="email">Email (*)</label>
-    <input type="email" name="email" required><br>
-    <label for="phone">Số điện thoại (*)</label>
-    <input type="number" name="phone" ><br>
-    <label for="secret-question">Câu hỏi bí mật (*)</label>
-    <select name="secret-question" id="2nd-layer">
-      <option value="first-class">Cấp 1 bạn học trường gì?</option>
-      <option value="pet">Thú nuôi đầu tiên của bạn tên gì</option>
-    </select><br>
-    <label for="answer">Trả lời (*)</label>
-    <input class="infomations" type="text" name="answer" required><br>
-    <input type="submit" value="Đăng ký">
-  </form>
+  <h1 id="hello">Hello</h1>
+  <button class="color-change" data-color="red">Red</button>
+  <button class="color-change" data-color="blue">Blue</button>
+  <button class="color-change" data-color="green">Green</button>
 </body>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#form').onsubmit = function () {
-      const ten = document.querySelector('#username').value;
-      if (ten.length < 8)
-        alert('Tên đăng nhập phải có ít nhất 8 ký tự');
-      const pass = document.querySelector('#password').value;
-      const confirm = document.querySelector('#passconfirm').value;
-      if (pass != confirm)
-        alert('Mật khẩu nhập lại không trùng');
-    };
-  });
-
-
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.color-change').forEach(function(button){
+      button.onclick = function(){
+          document.querySelector('#hello').style.color = button.dataset.color;
+      };
+    });
+  })
 </script>
 
 </html>
