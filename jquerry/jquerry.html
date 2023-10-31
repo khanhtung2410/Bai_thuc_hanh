@@ -5,14 +5,14 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").load("demo_test.txt");
+    $.get("demo_test.asp", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
   });
 });
 </script>
 </head>
 <body>
-
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
 
 <button>dao duy khanh tung 2121051147</button>
 
