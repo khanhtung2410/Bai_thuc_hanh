@@ -5,26 +5,28 @@
 <script>
 $(document).ready(function(){
   $("#btn1").click(function(){
-    $("#test1").text(function(i, origText){
-      return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
-    });
+    $("p").append(" <b>Appended text</b>.");
   });
 
   $("#btn2").click(function(){
-    $("#test2").html(function(i, origText){
-      return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")"; 
-    });
+    $("ol").append("<li>Appended item</li>");
   });
 });
 </script>
 </head>
 <body>
 
-<p id="test1">This is a <b>bold</b> paragraph.</p>
-<p id="test2">dao duy khanh tung 2121051147 <b>bold</b> paragraph.</p>
+<p>dao duy khanh tung 2121051147</p>
+<p>This is another paragraph.</p>
 
-<button id="btn1">Show Old/New Text</button>
-<button id="btn2">Show Old/New HTML</button>
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="btn1">Append text</button>
+<button id="btn2">Append list items</button>
 
 </body>
 </html>
