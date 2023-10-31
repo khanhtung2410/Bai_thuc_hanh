@@ -4,22 +4,31 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("#btn1").click(function(){
-    $("img").before("<b>Before</b>");
-  });
-
-  $("#btn2").click(function(){
-    $("img").after("<i>After</i>");
+  $("button").click(function(){
+    $("p").remove(".test, .demo");
   });
 });
 </script>
+<style>
+.test {
+  color: red;
+  font-size: 20px;
+}
+
+.demo {
+  color: green;
+  font-size: 25px;
+}
+</style>
 </head>
 <body>
 
-<img src="/images/w3jquery.gif" alt="jQuery" width="100" height="140"><br><br>
+<p>This is a paragraph.</p>
+<p class="test">dao duy khanh tung 2121051147".</p>
+<p class="test">This is p element with class="test".</p>
+<p class="demo">This is p element with class="demo".</p>
 
-<button id="btn1">dao duy khanh tung</button>
-<button id="btn2">2121051147</button>
+<button>Remove all p elements with class="test" and class="demo"</button>
 
 </body>
 </html>
