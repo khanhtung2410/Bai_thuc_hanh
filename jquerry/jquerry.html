@@ -13,15 +13,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("div").children().css({"color": "red", "border": "2px solid red"});
+  $("div").find("span").css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
 <body>
 
 <div class="descendants" style="width:500px;">div (current element) 
-  <p>p (dao duy khanh tung 2121051147)
-    <span>span (grandchild)</span>   
+  <p>p (child)
+    <span>span (dao duy khanh tung 2121051147)</span>   
   </p>
   <p>p (child)
     <span>span (grandchild)</span>
