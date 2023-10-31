@@ -5,18 +5,18 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("p").hide("slow", function(){
-      alert("Tdao duy khanh tung 2121051147");
-    });
+    $("#p1").css("color", "red")
+      .slideUp(2000)
+      .slideDown(2000);
   });
 });
 </script>
 </head>
 <body>
 
-<button>Hide</button>
+<p id="p1">dao duy khanh tung 2121051147</p>
 
-<p>This is a paragraph with little content.</p>
+<button>Click me</button>
 
 </body>
 </html>
