@@ -5,7 +5,12 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $.get("demo_test.asp", function(data, status){
+    $.post("demo_test_post.asp",
+    {
+      name: "Donald Duck",
+      city: "Duckburg"
+    },
+    function(data,status){
       alert("Data: " + data + "\nStatus: " + status);
     });
   });
@@ -14,7 +19,7 @@ $(document).ready(function(){
 </head>
 <body>
 
-<button>dao duy khanh tung 2121051147</button>
+<button>Sdao duy khanh tung 2121051147</button>
 
 </body>
 </html>
