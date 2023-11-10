@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="get-result.php" style="border:1px solid #ccc" method="get">
+<form action="get-result.php" style="border:1px solid #ccc" method="post">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
