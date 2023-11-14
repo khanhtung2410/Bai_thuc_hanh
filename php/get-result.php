@@ -9,28 +9,13 @@
 
 <body>
     <?php
-    $CNTT = 18;
-    $CNTT_clc = 22;
-    $KHDL = 18;
-    $Dia_chat = 17;
-    $Moi_truong = 15;
-    $pass_MT = "Moi truong";
-    $pass_DC = "Dia chat";
-    $pass_CNTT = "CNTT";
-    $pass_KHDL = "KHDL";
-    $pass_CNTT_CLC = "CNTT_CLC";
+    $sex = $_POST["sex"];
+    $height = $_POST["height"];
+    $weight = $_POST["weight"];
 
-    $total = $_POST["math"] + $_POST["phy"] + $_POST["chem"];
-    echo "Tong diem cua ban la $total";
-    if ($total < 15)
-        echo "Ban da truot het";
-    elseif ($total < 17)
-        echo "Ban da do vao nganh $pass_MT";
-    elseif ($total < 18)
-        echo "Ban da do vao nganh $pass_DC ,$pass_MT";
-    elseif ($total < 22)
-        echo "Ban da do vao nganh $pass_DC ,$pass_MT ,$pass_KHDL  ,$pass_CNTT";
-    else echo "Ban da do vao nganh $pass_DC ,$pass_MT ,$pass_KHDL  ,$pass_CNTT, $pass_CNTT_CLC ";
+    if($sex == "male" && $height >160 && $weight >50 || $sex == "female" && $height > 150 && $weight > 40 && $weight <70)
+        echo "Ban da dat yeu cau vao cong ty";
+    else echo "Ban khong dat yeu cau vao cong ty";
     ?>
 </body>
 

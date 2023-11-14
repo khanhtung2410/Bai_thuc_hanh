@@ -7,23 +7,18 @@
   <link rel="stylesheet" href="/form.css">
   <title>Isitnewyear</title>
 </head>
-<style>
-  h1{
-    color: white;
-    font-size: 200px;
-  }
-</style>
-<body style="background-color: black;">
-<?php
-$date_now = date("d");
-$month_now = date("m");
 
-if($date_now == "14" && $month_now == "11"){
-  echo "<h1>DUNG</h1>";
-}
-else echo "<h1>SAI</h1>";
-
-?>
+<body >
+<form action="get-result.php" method="post">
+  <label for="sex">Gioi tinh</label><br>
+  <input type="radio" name="sex" value="male">Nam
+  <input type="radio" name="sex" value="female">Nu <br>
+  <label for="height">Chieu cao</label><br>
+  <input type="text" name="height" required><br>
+  <label for="weight">Can nang</label><br>
+  <input type="text" name="weight" required><br>
+  <input type="submit" value="Submit">
+</form>
 </body>
 
 </html>
