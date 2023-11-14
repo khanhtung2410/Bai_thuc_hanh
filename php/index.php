@@ -8,11 +8,9 @@
   <title>Document</title>
 </head>
 <?php
- $items = array('item 1','item 2','item 3');
-foreach ($items as $item)
-{
-  echo "<img scr='image/$item width = 50px height =50px  alt='$item'>";
-}
+ for ($x =1 ;$x <=10; $x += +1){
+  echo "Day la so $x <br>";
+ }
  ?>
 </body>
 
