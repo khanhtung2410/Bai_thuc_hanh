@@ -9,21 +9,18 @@
 </head>
 
 <body>
-<?php
-$T = true;
-$F = false ;
-echo "T=$T <br>";
-echo "F=$F <br>";
-
-$check1 = 10>5;
-$check2 = 20<10;
-$check3 = $check1 && $check2;
-$check4 = $check1 || $check2;
-echo "check1 = $check1 <br>";
-echo "check2 = $check2 <br>";
-echo "check3 = $check3 <br>";
-echo "check4 = $check4 <br>";
-?>
+<form action="get-result.php" method="post">
+  <label for="amount">Amount:</label><br>
+  <input type="number" name="amount" required><br>
+  <label for="choose-currency">Select currency</label><br>
+  <select name="choose-currency">
+    <option value="USD">USD</option>
+    <option value="AUD">AUD</option>
+    <option value="JPY">JPY</option>
+    <option value="EUR">EUR</option>
+  </select>
+  <input type="submit" value="Convert">
+</form>
 </body>
 
 </html>
