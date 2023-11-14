@@ -7,36 +7,13 @@
   <link rel="stylesheet" href="/form.css">
   <title>Document</title>
 </head>
-
-<body>
-  <p>bai 1 - 2 bien dau vao - 1 bien ra</p>
-  <?php
-  $so1 = 15;
-  $so2 = 4;
-  if ($so1 > $so2)
-    echo $so1;
-  else echo $so2;
-  ?>
-  <p>bai 2 - 3 bien đau vao - 1 bien ra</p>
-<?php 
-$a = 1;
-$b = 2;
-$c = 3;
-$so_nghiem_x;
-?>
-<p>bai 3 - 1 bien dau vao (string) - 1 bien ra</p>
-<?php 
-$string_vidu = "hoc thoi hh";
-$so_h = 0;
-?>
-<p>bai 4 - 2 bien dau vao - 1 bien ra</p>
 <?php
-$canh_a = 4;
-$canh_b = 5;
-if($a!=$b) echo "hinh chu nhat";
-else echo "hinh vuong" ;
-?>
-
+ $items = array('item 1','item 2','item 3');
+foreach ($items as $item)
+{
+  echo "<img scr='image/$item width = 50px height =50px  alt='$item'>";
+}
+ ?>
 </body>
 
 </html>
