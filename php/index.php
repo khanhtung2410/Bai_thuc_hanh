@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="/form.css">
   <title>Document</title>
 </head>
-<?php
-$x = 1;
-while ($x <= 10) {
-  echo "Day la so $x <br>";
-  $x++;
-}
-?>
+
+<body>
+  <form action="get-result.php" method="get">
+  <label for="quit">Do you want to quit?</label><br>  
+  <input type="radio" name="quit" value="yes">Yes <br>
+  <input type="radio" name="quit" value="no">No <br>
+  <input type="submit" value="Confirm">
+  </form>
 </body>
 
 </html>
