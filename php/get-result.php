@@ -9,13 +9,18 @@
 
 <body>
     <?php
-    $sex = $_POST["sex"];
-    $height = $_POST["height"];
-    $weight = $_POST["weight"];
-
-    if($sex == "male" && $height >160 && $weight >50 || $sex == "female" && $height > 150 && $weight > 40 && $weight <70)
-        echo "Ban da dat yeu cau vao cong ty";
-    else echo "Ban khong dat yeu cau vao cong ty";
+    $currency = $_GET['currency'];
+    echo " $amount $currency is equal ";
+    switch ($currency) {
+        case "UDS":
+            echo $amount * $USD;
+        case "EUR":
+            echo $amount * $EUR;
+        case "SGD":
+            echo $amount * $SGD;
+        case "JPY":
+            echo $amount * $JPY;
+    }
     ?>
 </body>
 
