@@ -9,15 +9,21 @@
 
 <body>
     <?php
-    $exchangeRate = array("USD"=>22300, "EUR"=>27300, "SGD"=>17000 , "JPY"=>120);
-    $exchangeRate[] = 600;
-    $exchangeRate[] = 16000;
-    $exchangeRate[0] = 22200;
-    echo "<h3>Exchange rate to VND</h3>";
-    echo "USD:" .$exchangeRate['USD'] . "<br>";
-    echo "EUR:" .$exchangeRate['EUR'] . "<br>"; 
-    echo "SGD:" .$exchangeRate['SGD'] . "<br>"; 
-    echo "JPY:" .$exchangeRate['JPY'] . "<br>"; 
+    $USD = 22300;
+    $EUR = 27300;
+    $SGD = 17000;
+    $JPY = 120;
+    $amount = $_GET['amount'];
+    echo " $amount USD is equal ";
+    if ($_GET["currency"] == "USD") {
+        echo $amount * $USD;
+    } elseif ($_GET["currency"] == "EUR") {
+        echo $amount * $EUR;
+    } elseif ($_GET["currency"] == "SGD") {
+        echo $amount * $SGD;
+    } else {
+        echo $amount * $JPY;
+    }
     ?>
 </body>
 
