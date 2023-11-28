@@ -20,6 +20,7 @@
   ?>
   <h1>function</h1>
   <?php
+  require('13-function.php');
   $item = array('ahri.jpg', 'hecarim.jpg');
   display_image_list($item);
 
