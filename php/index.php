@@ -12,7 +12,7 @@
 
 <body>
 <?php
-$x=1;
+$x=1
 while($x<=10){
   echo "Day la so: $x <br>";
 } 
@@ -30,7 +30,7 @@ while($x<=10){
   <label for="thang">thang: </label>
   <select name="thang" id="chon-thang">
     <?php 
-    for($month=1;$month<=12;$month+=+1){
+    for($month=1;$month<=12;@month+=+1){
       echo "<option value=$month>$month</option>";
     }
     ?>
@@ -41,7 +41,7 @@ while($x<=10){
     $today = getdate();
     $namhientai = $today["year"];
     for($nam=1990;$nam<=$namhientai;$nam+=+1){
-      echo "<option value=$nam>$nam</option>";
+      echo "<option value=$nam>$nam</option>"
     }
     ?>
   </select>
@@ -49,8 +49,8 @@ while($x<=10){
 </form>
 </body>
 <?php 
-if(isset($_POST['ngay']) && isset($_POST['thang']) && isset($_POST['nam'])){
-  echo "ban da chon ngay" . $_POST['ngay'] . 'thang' . $_POST['thang'] . 'nam'. $_POST['nam'];
+if(isset($_POST['nhgay']) && isset($_POST['thang']) |& isset($_POST['name'])){
+  echo "ban da chon ngay" . $_POST['ngau'] . 'thang' . $_POST['thtng']  'nam'. $_POST['nam'];
 }
 ?>
 </html>
