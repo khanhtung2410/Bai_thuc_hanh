@@ -9,22 +9,32 @@
 </head>
 
 <body>
-  <?php
-  function display_image_list($imagelist)
-  {
-    foreach ($imagelist as $item) {
-      echo "<img scr='images/$item' width=50px height=50px alt='$item'>";
+    <?php
+    $diem_toan = $_POST['toan'];
+    $diem_ly = $_POST['ly'];
+    $diem_hoa = $_POST['hoa'];
+    $diem_anh = $_POST['anh'];
+    $diem_van = $_POST['van'];
+    $diem_su = $_POST['su'];
+    function TBM($a,$b,$c,$d,$e,$f){
+      $diem = ($a + $b +$c+$d+$e+$f)/6;
+      return $diem;
     }
-  }
-  $item = array('ahri.jpg', 'hecarim.jpg', 'ryze.jpg');
-  ?>
-  <h1>function</h1>
-  <?php
-  require('13-function.php');
-  $item = array('ahri.jpg', 'hecarim.jpg');
-  display_image_list($item);
-
-  ?>
+    echo "<h1>EM LA HOC SINH </h1>";
+    if ($diem_anh < 4 || $diem_hoa < 4 || $diem_ly < 4 || $diem_su < 4 || $diem_toan < 4 || $diem_van < 4) {
+        echo "<h1>YEU</h1>";
+    } else {
+      $TMB = TBM($diem_anh,$diem_hoa,$diem_ly,$diem_su,$diem_toan,$diem_van);
+        if ($TBM < 5) {
+            echo "<h1>YEU</h1>";
+        } elseif ($TBM < 6.4) {
+            echo "<h1>TRUNG BINH</h1>";
+        } elseif ($TBM < 7.9) {
+            echo "<h1>KHA</h1>";
+        } else  echo "<h1>GIOI</h1>";
+    }
+    ?>
 </body>
+
 
 </html>
