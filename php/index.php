@@ -9,20 +9,21 @@
 </head>
 
 <body>
-<?php
-$items = array('ahri.jpg','ryze.jpg','hecarim.jpg');
-foreach($items as $item){
-  echo "<img src='/php/$item' width=50px height=50px alt='$item'>";
+  <?php
+  function display_image_list($imagelist)
+  {
+    foreach ($imagelist as $item) {
+      echo "<img scr='images/$item' width=50px height=50px alt='$item'>";
+    }
+  }
+  $item = array('ahri.jpg', 'hecarim.jpg', 'ryze.jpg');
+  ?>
+  <h1>function</h1>
+  <?php
+  $item = array('ahri.jpg', 'hecarim.jpg');
+  display_image_list($item);
 
-}
-?>
-<h1>function</h1>
-<?php 
-$item = array('ahri.jpg','hecarim.jpg');
-foreach($items as $item){
-  echo "<img scr='images/$item' width=50px height=50px alt='$item'>";
-}
-?>
+  ?>
 </body>
 
 </html>
