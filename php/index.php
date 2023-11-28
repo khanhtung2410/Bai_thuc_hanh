@@ -24,7 +24,7 @@
  </form>
 </body>
 <?php
-$exchangerate = array("usd"=>22300,'eur'=>27300,'sgd'=>17000,'jpy'=>200)
+$exchangerate = array("usd"=>22300,'eur'=>27300,'sgd'=>17000,'jpy'=>200);
 if (isset($_POST['amount'])) {
   $amount = $_POST['amount'];
   $currency = $_POST['currency'];
