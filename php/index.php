@@ -8,28 +8,50 @@
   <title>Isitnewyear</title>
 </head>
 
+</head>
+
 <body>
- <h3>currency exchange</h3>
- <form action="" method="post">
-  <p>amount</p>
-  <input type="number" name="amount">
-  <p>select currency</p>
-  <select name="currency">
-    <option value="usd">usd</option>
-    <option value="eur">eur</option>
-  <option value="sgd">singapore dolar</option>
-  <option value="jpy">japanese yen</option>
-  </select>
-  <input type="submit" value="convert">
- </form>
-</body>
 <?php
-$exchangerate = array("usd"=>22300,'eur'=>27300,'sgd'=>17000,'jpy'=>200);
-if (isset($_POST['amount'])) {
-  $amount = $_POST['amount'];
-  $currency = $_POST['currency'];
-  echo "$amount usd is equal". number_format($amount * $exchangerate['currency']). "vnd";
+$x=1;
+while($x<=10){
+  echo "Day la so: $x <br>";
+} 
+?>
+  <h1>checkhtml</h1>
+<form action="" method="post">
+  <label for="ngay">ngay: </label>
+  <select name="ngay" id="chon-ngay">
+    <?php 
+    for($date=1;$date<=31;$date+=+1){
+      echo "<option value=$date>$date</option>";
+    }
+    ?>
+  </select>
+  <label for="thang">thang: </label>
+  <select name="thang" id="chon-thang">
+    <?php 
+    for($month=1;$month<=12;$month+=+1){
+      echo "<option value=$month>$month</option>";
+    }
+    ?>
+  </select>
+  <label for="nam">nam: </label>
+  <select name="nam" id="chon-nam">
+    <?php
+    $today = getdate();
+    $namhientai = $today["year"];
+    for($nam=1990;$nam<=$namhientai;$nam+=+1){
+      echo "<option value=$nam>$nam</option>";
+    }
+    ?>
+  </select>
+  <input type="submit">
+</form>
+</body>
+<?php 
+if(isset($_POST['ngay']) && isset($_POST['thang']) && isset($_POST['nam'])){
+  echo "ban da chon ngay" . $_POST['ngay'] . 'thang' . $_POST['thang'] . 'nam'. $_POST['nam'];
 }
 ?>
-
 </html>
+
